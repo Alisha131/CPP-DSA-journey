@@ -19,5 +19,13 @@ for(int st = 0;  st<n; st++) {
 }
  cout << "maximum subarray sum is = " << maxsum << endl;
 
+// for(int st=0; st<n; st++){
+//     for(int end=st; end<n; end++){
+//         for(int i=st; i<=end; i++){
+//             cout<<arr[i]<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
     return 0;
 }
