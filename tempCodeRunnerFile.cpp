@@ -1,11 +1,21 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+class node{
+    public:
+         int data;
+         node* next;
+         node* prev;
 
-    int matrix[4][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; //2D matrix
-    int rows = 4;
-    int col = 3;
-    cout>>matrix[2][1];
-    return 0;
-}
+         node(int val){
+            data = val;
+            next = prev = NULL;
+         }
+};
+
+class doublylist{
+    node* head;
+    node* tail;
+
+public:
+      doublylist(){
